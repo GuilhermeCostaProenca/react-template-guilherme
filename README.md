@@ -1,5 +1,8 @@
 # ⚛️ React Template – Guilherme.Dev
 
+[![](https://img.shields.io/badge/setup-init--project-blue?style=flat-square)](#)
+[![](https://github.com/GuilhermeCostaProenca/react-template-guilherme/actions/workflows/ci.yml/badge.svg)](https://github.com/GuilhermeCostaProenca/react-template-guilherme/actions)
+
 Template moderno com **React + Vite**, organizado com boas práticas de desenvolvimento, Git Flow, commits semânticos e CI automático via GitHub Actions. Ideal para projetos reais, MVPs e landing pages reativas.
 
 ---
@@ -45,24 +48,58 @@ react-template-guilherme/
 
 ---
 
-## ⚙️ Scripts
+## 🚀 Como usar este template
+
+1. Clique em **Use this template** no GitHub
+2. Clone o repositório gerado
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Inicie o projeto limpo com:
+
+```bash
+npm run init:project
+```
+
+Esse comando irá:
+- Atualizar o nome do projeto
+- Resetar o changelog
+- Apagar arquivos desnecessários do template
+
+---
+
+## ▶️ Rodar localmente
+
+```bash
+npm run dev
+```
+
+Acesse em: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## ⚙️ Scripts disponíveis
 
 ```bash
 npm install       # Instala as dependências e ativa Husky automaticamente
 npm run dev       # Inicia o servidor local de desenvolvimento (Vite)
 npm run build     # Gera a versão final para produção
-npm run preview   # Visualiza o build
+npm run preview   # Visualiza o build final localmente
 npm run commit    # Abre o menu interativo do Commitizen
+npm run init:project  # Limpa arquivos do template e inicia um novo projeto
 ```
 
-> ⚠️ Commits manuais são bloqueados! Use sempre `npm run commit`
+> ⚠️ Commits devem ser feitos sempre com `npm run commit`, pois o Husky bloqueia commits manuais
 
 ---
 
-## 🔀 Git Flow Padrão
+## 🔀 Fluxo de desenvolvimento (Git Flow)
 
 - `main` → versão estável e com tags (`v0.1.0`, `v1.0.0`, etc.)
-- `develop` → onde o desenvolvimento contínuo acontece
+- `develop` → desenvolvimento contínuo
 - `feature/x` → novas funcionalidades
 - `release/x.x.x` → preparação para nova release
 - `hotfix/x` → correções críticas direto na produção
@@ -92,6 +129,7 @@ feat(scope): mensagem curta
 ```
 
 Para ativar localmente:
+
 ```bash
 git config commit.template .config/gitmessage.txt
 ```
@@ -124,4 +162,7 @@ Distribuído sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE).
 
 ## 👤 Autor
 
-Criado por [Guilherme Costa Proença](https://github.com/GuilhermeCostaProenca)
+Criado por [Guilherme Costa Proença](https://github.com/GuilhermeCostaProenca)  
+Entre em contato via [LinkedIn](https://linkedin.com/in/guilhermecostaproenca)
+
+---
